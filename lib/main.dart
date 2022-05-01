@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           style: ButtonStyle(
             shape: MaterialStateProperty.resolveWith<OutlinedBorder>((_) {
               return RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(25));
+                  borderRadius: BorderRadius.circular(50));
             }),
             padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
               const EdgeInsets.all(25),
@@ -127,6 +127,7 @@ class _HomePageState extends State<HomePage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
+          const SizedBox(),
           Image.asset(
             boardingData[index]['image'],
             height: MediaQuery.of(context).size.width * 0.8,
